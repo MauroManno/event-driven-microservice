@@ -1,0 +1,70 @@
+
+PS C:\Users\mauro> 
+docker run -it --network=host confluentinc/cp-kafkacat kafkacat -L -b 0.0.0.0:19092
+
+Metadata for all topics (from broker -1: 0.0.0.0:19092/bootstrap):
+ 3 brokers:
+  broker 2 at localhost:29092
+  broker 1 at localhost:19092 (controller)
+  broker 3 at localhost:39092
+ 3 topics:
+  topic "__confluent.support.metrics" with 1 partitions:
+    partition 0, leader 1, replicas: 1,2,3, isrs: 1,2,3
+  topic "_schemas" with 1 partitions:
+    partition 0, leader 3, replicas: 3,1,2, isrs: 3,1,2
+  topic "twitter-topic" with 3 partitions:
+    partition 0, leader 1, replicas: 1,2,3, isrs: 1,2,3
+    partition 1, leader 3, replicas: 3,1,2, isrs: 3,1,2
+    partition 2, leader 2, replicas: 2,3,1, isrs: 2,3,1
+PS C:\Users\mauro>
+
+
+PS C:\Users\mauro> 
+docker run -it --network=host confluentinc/cp-kafkacat kafkacat -C -b 0.0.0.0:19092 -t twitter-topic
+
+☺��������u������ƃ�☺☻\ipsum consectetuer Lorem Java ipsum adipiscing☻�����`
+☺��ԑ˒��c��������d☻�☺Fusce libero malesuada purus libero congue sit Kafka posuere adipiscing ipsum Lorem amet☻�����`
+☺����Ю���☺��傈����☺☻hMaecenas magna purus Fusce Kafka Lorem posuere purus☻�ͦ��`
+☺Ĭ������↑���ȟɴ��☺☻�☺libero Lorem libero Fusce ultricies purus Elasticsearch magna massa adipiscing Maecenas amet☻�駓�`
+☺����ƿ���☺���γ����☺☻�☺Lorem ultricies congue Lorem lectus consectetuer consectetuer pulvinar Java amet porttitor Fusce dolor libero pulvinar☻�����`
+☺滢�����L��ہ꟩��☺☻�☺Lorem porttitor malesuada consectetuer Fusce lectus elit Java posuere Lorem pulvinar porttitor dolor libero☻�����`
+☺�¿������☺��Ը�����☺☻velit amet congue congue Elasticsearch congue Maecenas dolor☻�����`
+☺���������☺¾�������☺☻jFusce libero purus dolor lectus Java Lorem ipsum amet☻�����`
+☺������ǜ{����ȸ���☺☻�☺ultricies congue congue ipsum libero Kafka sit elit ipsum lectus☻�ܡ��`
+☺�ʠ���҈�☺�̊������☺☻HLorem elit sed Java posuere Maecenas☻�����`
+☺�뮷�����☺��Ƕ����]☻�☺sit pulvinar amet massa dolor Fusce Kafka libero adipiscing elit congue☻�ڬ��`
+☺���������☺���ˆ��Ҿ☺☻�☺elit consectetuer adipiscing malesuada ipsum Java porttitor posuere consectetuer libero☻�����`
+% Reached end of topic twitter-topic [1] at offset 5
+% Reached end of topic twitter-topic [0] at offset 2
+% Reached end of topic twitter-topic [2] at offset 5
+☺���ֳ����☺����ڴ��
+                 ☻�☺ultricies purus amet amet pulvinar congue Kafka sed ipsum lectus sit sit☻�����`
+% Reached end of topic twitter-topic [1] at offset 6
+☺���������☺��ൟ֔�↑☻�☺sed dolor amet adipiscing porttitor adipiscing elit malesuada Kafka amet sit congue Fusce Fusce lectus☻�����`
+% Reached end of topic twitter-topic [1] at offset 7
+☺������^п������☻☺lectus congue porttitor massa magna ultricies Microservices lectus dolor porttitor sit malesuada☻�˱��`
+% Reached end of topic twitter-topic [2] at offset 6
+☺���ؒ���A�����4☻�☺amet ultricies Lorem magna malesuada Microservices ultricies massa purus☻�貓�`
+% Reached end of topic twitter-topic [0] at offset 3
+☺��������I�ْӀ���5☻�☺posuere amet sed amet libero sit consectetuer congue Kafka ultricies elit libero posuere congue posuere sed☻�����`
+% Reached end of topic twitter-topic [1] at offset 8
+☺���ݒ�Ȁ�☺�����抜d☻�☺ipsum magna pulvinar malesuada elit ultricies Fusce ipsum Kafka pulvinar consectetuer dolor purus malesuada porttitor Lorem☻�����`
+% Reached end of topic twitter-topic [0] at offset 4
+☺��������J���������☺☻�☺porttitor porttitor sed Maecenas Fusce pulvinar massa Elasticsearch Fusce Fusce Maecenas libero consectetuer massa☻༶��`
+% Reached end of topic twitter-topic [0] at offset 5
+☺������ד�☺���׻��☺☻�☺pulvinar magna massa malesuada sit massa pulvinar porttitor Microservices amet libero Fusce magna ipsum magna☻�ٷ��`
+% Reached end of topic twitter-topic [2] at offset 7
+☺ʭ����ի�☺��ܑ҅��?☻�☺malesuada adipiscing ultricies magna libero sed elit Kafka ultricies libero consectetuer Fusce sed pulvinar☻�����`
+% Reached end of topic twitter-topic [0] at offset 6
+☺��͉��Ϯ↓Ƃ��ꐕ��☺☻�☺consectetuer libero sed amet congue libero Java adipiscing ultricies dolor elit☻�����`
+% Reached end of topic twitter-topic [2] at offset 8
+☺�Ý�����&��������_☻�☺porttitor lectus ipsum posuere sed malesuada libero Java sit Fusce elit lectus amet Fusce☻୻��`
+% Reached end of topic twitter-topic [2] at offset 9
+☺�Ґ����ܦ☺���Ǵ���#☻�☺congue massa libero consectetuer magna Maecenas massa sed Kafka Fusce ipsum malesuada posuere sed Maecenas sed☻�ʼ��`
+% Reached end of topic twitter-topic [0] at offset 7
+☺�粞ɤ���☺��ɦ����q☻�☺lectus consectetuer sed sed magna posuere Maecenas adipiscing Microservices amet massa lectus congue pulvinar Fusce☻�潓�`
+% Reached end of topic twitter-topic [0] at offset 8
+☺�����Ѳ��☺�������� ☻�☺lectus porttitor posuere Fusce adipiscing Fusce Elasticsearch pulvinar purus congue consectetuer Lorem☻�����`
+% Reached end of topic twitter-topic [0] at offset 9
+☺�߶׶�إ�☺�����ۀ��☺☻�☺libero magna elit Maecenas purus Kafka pulvinar ultricies adipiscing Lorem☻�����`
+% Reached end of topic twitter-topic [1] at offset 9
