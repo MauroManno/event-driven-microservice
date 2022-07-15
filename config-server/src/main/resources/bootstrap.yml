@@ -5,6 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/Dev/Java/ws/intellij/microservices-demo/config-server-repository
+          uri: https://github.com/MauroManno/spring-cloud-config-server-repository
+          username: mauromanno
+          password: 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
           clone-on-start: true
     fail-fast: true
